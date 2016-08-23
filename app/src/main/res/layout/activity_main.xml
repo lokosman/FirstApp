@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="lokos.man.firstapp.ActivityMain">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/jackson"
+        android:textAllCaps="false"/>
+
+    <EditText
+        android:id="@+id/editPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/password"
+        android:layout_below="@id/editName"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/bttnEnter"
+        android:layout_below="@id/editPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:onClick="Enter"
+        android:text="@string/enter"/>
+
+    <Button
+        android:id="@+id/bttnExit"
+        android:layout_below="@id/bttnEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:text="@string/exit"/>
+
+
+
+</RelativeLayout>
